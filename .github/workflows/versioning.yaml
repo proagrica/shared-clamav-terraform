@@ -1,0 +1,41 @@
+name: Versioning
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  version:
+    name: Version
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 📚 Checkout
+        uses: actions/checkout@v3
+
+      - name: 🔨 Extract Tag
+        id: extract_tag
+        uses: mathieudutour/github-tag-action@v6.1
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: 📐 Format Tag
+        id: format_tag
+        shell: bash
+        run: |
+          previous_tag=${{ steps.extract_tag.outputs.previous_tag }}
+          new_tag=${{ steps.extract_tag.outputs.new_tag }}
+          if [ "${previous_tag}" == "v0.0.0" ]; then
+            new_tag="v1.0.0"
+          fi
+          echo "previous_tag = $previous_tag"
+          echo "new_tag = $new_tag"
+          echo "::set-output name=new_tag::$new_tag"
+      - name: 🚀 Release
+        uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: ${{ steps.format_tag.outputs.new_tag }}
+          release_name: Release ${{ steps.format_tag.outputs.new_tag }}
+          body: ${{ steps.extract_tag.outputs.changelog }}
