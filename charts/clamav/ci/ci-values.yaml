@@ -1,0 +1,3 @@
+freshclam:
+  enabled: false
+databaseDirectory: /var/lib/clamav
