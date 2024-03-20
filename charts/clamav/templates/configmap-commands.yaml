@@ -1,0 +1,12 @@
+{{- $root := . }}
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ template "clamav.commandsname" . }}
+  labels:
+    {{- include "clamav.labels" . | nindent 4 }}
+data:
+  {{- range $path, $bytes := .Files.Glob "files/*" }}
+  {{ $path | base }}: |
+    {{- $root.Files.Get $path | nindent 4 }}
+  {{- end }}
