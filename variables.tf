@@ -4,7 +4,7 @@ variable "namespace" {
 }
 
 variable "tags" {
-  description = "Tags to apply to all resources."
+  description = "Tags to apply to all reso urces."
   type        = map(string)
   default     = {}
 }
