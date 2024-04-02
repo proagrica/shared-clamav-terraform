@@ -28,7 +28,7 @@ jobs:
           if [ "${previous_tag}" == "v0.0.0" ]; then
             new_tag="v1.0.0"
           fi
-          if [ "${previous_tag}" == "v1.0.3" ]; then
+          if [ "${previous_tag}" == "v1.4.17" ]; then
             new_tag="v2.0.0"
           fi
           echo "previous_tag = $previous_tag"
