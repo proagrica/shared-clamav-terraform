@@ -15,9 +15,5 @@ spec:
       targetPort: 3310
       protocol: TCP
       name: tcp-clamavd
-    - name: http-clamd
-      port: 3312
-      protocol: TCP
-      targetPort: http-clamavd
   selector:
     {{- include "clamav.selectorLabels" . | nindent 4 }}

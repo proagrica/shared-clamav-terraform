@@ -28,6 +28,9 @@ jobs:
           if [ "${previous_tag}" == "v0.0.0" ]; then
             new_tag="v1.0.0"
           fi
+          if [ "${previous_tag}" == "v1.0.3" ]; then
+            new_tag="v1.4.16"
+          fi
           echo "previous_tag = $previous_tag"
           echo "new_tag = $new_tag"
           echo "::set-output name=new_tag::$new_tag"

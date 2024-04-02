@@ -11,59 +11,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Deprecated
 ### Removed -->
 
-## v1.4.15 - 2023-11-15
-
-### Changed
-
-- Updated clamav chart to `0.22.0`
-
-## v1.4.13 - 2023-11-15
-
-### Changed
-
-- Updated clamav chart to `0.21.0`
-
-## v1.4.12 - 2023-11-15
-
-### Changed
-
-- Updated clamav chart to `0.20.0`
-
-## v1.4.11 - 2023-11-15
-
-### Changed
-
-- Updated clamav chart to `0.19.0`
-
-## v1.4.10 - 2023-11-14
-
-### Changed
-
-- Updated clamav chart to `0.18.0`
-
-## v1.4.9 - 2023-11-14
-
-### Changed
-
-- Updated clamav chart to `0.17.0`
-
-## v1.4.8 - 2023-11-14
-
-### Changed
-
-- Updated clamav chart to `0.15.0`
-
-## v1.4.6 - 2023-10-31
+## v1.4.16 - 2024-04-02
 
 ### Changed
 
 - Updated clamav chart to `0.14.0`
-
-## v1.4.5 - 2023-10-31
-
-### Changed
-
-- Updated clamav chart to `0.13.0`
 
 ## v1.4.4 - 2023-10-30
 

@@ -11,59 +11,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Deprecated
 ### Removed -->
 
-## v0.22.0 - 2023-11-15
+## v0.14.0 - 2024-04-02
 
 ### Changed
 
 - Changed service ports
-
-## v0.21.0 - 2023-11-15
-
-### Changed
-
-- Changed service ports
-
-## v0.20.0 - 2023-11-15
-
-### Changed
-
-- Changed service ports
-
-## v0.19.0 - 2023-11-15
-
-### Changed
-
-- Changed service ports so they include both http and http2
-
-## v0.18.0 - 2023-11-14
-
-### Changed
-
-- Changed service port from http to http2
-
-## v0.17.0 - 2023-11-14
-
-### Removed
-
-- Removed deployment port
-
-## v0.16.0 - 2023-11-14
-
-### Added
-
-- Adding new deployment port
-
-## v0.15.0 - 2023-10-31
-
-### Added
-
-- Adding new port
-
-## v0.14.0 - 2023-10-31
-
-### Changed
-
-- Service port number rollback
 
 ## v0.13.0 - 2023-10-31
 
